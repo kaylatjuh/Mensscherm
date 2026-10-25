@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #f4ebdd;
+    color: #1c1a18;
+    font-family: "oswald", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+nav,
+.knop,
+.home a {
+    font-family: "oswald", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Navigatie bar styleing*/
+nav {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 15px;
+    background-color: #1c1a18;
+}
+
+nav a {
+    color: #f4ebdd;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #c94233;
+}
+
+/* Mijn home pagina . */
+
+.home {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px;
+    overflow: hidden;
+    background-color: #c94233;
+    color: #f4ebdd;
+    text-align: center;
+}
+
+.home-gif {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+.home-inhoud {
+    position: relative;
+    z-index: 1;
+}
+
+.home-titel h1 {
+    margin: 0;
+}
+
+.home h1 {
+    margin: 10px;
+    font-size: clamp(40px, 6vw, 70px);
+}
+
+.home p {
+    font-size: 18px;
+}
+
+.slogan {
+    font-family: "oswald", sans-serif;
+    font-weight: 400;
+}
+
+.home a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    border: 1px solid #1c1a18;
+    color: #1c1a18;
+    text-decoration: none;
+}
+
+.home a:hover {
+    background-color: #1c1a18;
+    color: #f4ebdd;
+}
+
+/* Manifest tekst styling */
+.manifest {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 30px;
+}
+
+.manifest-titel {
+    width: 40%;
+    min-width: 0;
+    padding: 10px;
+    background-color: #f4ebdd;
+}
+
+.manifest-titel h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: clamp(56px, 7vw, 100px);
+    line-height: 0.9;
+    letter-spacing: -2px;
+}
+
+.manifest-afbeelding {
+    display: block;
+    width: 400px;
+    max-width: 90%;
+    height: auto;
+    margin: 60px auto 20px;
+}
+
+.manifest-tekst {
+    width: 60%;
+    min-width: 0;
+    padding: 20px;
+}
+
+.manifest-tekst p,
+.manifest-tekst li {
+    line-height: 1.5;
+}
+
+.manifest-tekst ul {
+    padding-left: 25px;
+}
+
+.manifest-tekst li {
+    margin-bottom: 12px;
+}
+
+.belangrijk {
+    padding: 15px;
+    background-color: #1c1a18;
+    color: #f4ebdd;
+    font-weight: 700;
+}
+
+.knop {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #c94233;
+    color: #1c1a18;
+    text-decoration: none;
+}
+
+.knop:hover {
+    background-color: #1c1a18;
+    color: #f4ebdd;
+}
+
+/* Informatiepagina */
+.informatie {
+    padding: 30px;
+    background-color: #1c1a18;
+    color: #f4ebdd;
+}
+
+.informatie h1 {
+    font-size: 40px;
+}
+
+.informatie p {
+    line-height: 1.5;
+}
+
+/* 6 Factoren van suler */
+.factoren {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.factor {
+    padding: 20px;
+    border: 1px solid #c94233;
+}
+
+.factor h3 {
+    color: #e94335;
+}
+
+/* Bronnenpagina */
+.bron {
+    padding: 30px;
+    background-color: #f4ebdd;
+    color: #1c1a18;
+}
+
+.bronnen-vakken {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.bron-vak {
+    display: block;
+    padding: 20px;
+    background-color: #c94233;
+    color: #1c1a18;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.bron-vak:hover,
+.bron-vak:focus-visible {
+    background-color: #1c1a18;
+    color: #f4ebdd;
+}
+
+.bron-uitleg>section {
+    padding: 20px 0;
+    border-bottom: 1px solid #1c1a18;
+}
+
+.bron-uitleg a {
+    color: #c94233;
+    overflow-wrap: anywhere;
+}
+
+/* Onderkant met naamgeving Kayla */
+footer {
+    padding: 15px 30px;
+    border-top: 1px solid #1c1a18;
+    background-color: #f4ebdd;
+    color: #1c1a18;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+
+}
